@@ -1,7 +1,7 @@
 # Python Application for calculating Lagrange Polynomials of size N
 #author: James Wu
 def main():
-    
+    """
     data = [(116, 5340342343456180831716311918824435227733),
 (68, 4694834529111866497642094185471120980099),
 (47 , 2985558448356350949342309936054043944717),
@@ -21,9 +21,9 @@ def main():
     
     print lagrangePoly(data, 0, 5992830235524142758386850633773258681119);
     """
-    data = [(0,1), (0,2), ];
+    data = [(0,1)];
     print lagrangePoly(data, 0,5);
-    """
+    
 def getdenominator(data, x0):
     "multiplies every coordinate by every other coordinate according to (x0-x1)(x0-x2).. etc"
     denominator = 1;
@@ -56,8 +56,7 @@ def lagrangePoly(data, var,mod):
     total = 0;
     for (x,y) in data:
         print y, "*",
-        total += (((y * getnumerator(data,x,var)%mod)) / ((getdenominator(data,x))%mod))%mod;
-        
+        total += ((y * getnumerator(data,x,var)%mod)) / ((getdenominator(data,x))%mod);
         print "\n";
 
     return total%mod;

@@ -60,7 +60,7 @@ def lagrangePoly(data, var,mod):
         
         print "\n";
 
-    return total%mod;
+    return total;
 
 
 main();

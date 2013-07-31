@@ -1,7 +1,6 @@
 # Python Application for calculating Lagrange Polynomials of size N
 #author: James Wu
 def main():
-    
     data = [(116, 5340342343456180831716311918824435227733),
 (68, 4694834529111866497642094185471120980099),
 (47 , 2985558448356350949342309936054043944717),
@@ -20,10 +19,8 @@ def main():
 (74   , 5652379616125941885220848029716944416202)];
     
     print lagrangePoly(data, 0, 5992830235524142758386850633773258681119);
-    """
-    data = [(0,1), (0,2), ];
-    print lagrangePoly(data, 0,5);
-    """
+    
+    
 def getdenominator(data, x0):
     "multiplies every coordinate by every other coordinate according to (x0-x1)(x0-x2).. etc"
     denominator = 1;
@@ -32,7 +29,7 @@ def getdenominator(data, x0):
                 continue;
             else:
                 denominator *= (x0-x);
-                print "(", x0-x,")",
+                print "(", x0, "-", x ,")",
    
     return denominator;
 
@@ -45,22 +42,17 @@ def getnumerator(data, x0, var):
             continue;
         else:
             print "(", var, "-", x ,")",
-            
             numerator *= (var-x);
-    print "";
-    print "------------------------------------------------------------------------------------------------------------------------------------"
+
     return numerator;
 
 def lagrangePoly(data, var,mod):
     "returns the LaGrange polynomial solution f(var) for a set of data"
     total = 0;
     for (x,y) in data:
-        print y, "*",
-        total += (((y * getnumerator(data,x,var)%mod)) / ((getdenominator(data,x))%mod))%mod;
-        
-        print "\n";
+        total += ((y * getnumerator(data,x,var)%mod) / (getdenominator(data,x))%mod);
 
-    return total%mod;
+    return total;
 
 
 main();
