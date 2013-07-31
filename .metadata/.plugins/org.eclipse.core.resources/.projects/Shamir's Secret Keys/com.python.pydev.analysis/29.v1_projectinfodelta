@@ -1,0 +1,13 @@
+INSTUPSecretKeys.LagrangeInterp
+/Users/jameswu/Shamirkeys/Shamir's Secret Keys/SecretKeys/LagrangeInterp.py
+INFOS:&&2|1|2|0&&2|3|2|0&&3|4|2|0&&2|5|2|0&&3|6|2|0&&2|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|8|2|0
+total=8
+lagrangePoly=7
+getdenominator=3
+num=9
+getnumerator=5
+SecretKeys.LagrangeInterp=2
+numerator=6
+denominator=4
+den=10
+main=1

@@ -1,1 +1,8 @@
-DELSTRSecretKeys.LagrangeInterp
+INSTUPSecretKeys.LagrangeInterp
+/Users/jameswu/Shamirkeys/Shamir's Secret Keys/SecretKeys/LagrangeInterp.py
+INFOS:&&2|1|2|0&&2|3|2|0&&2|4|2|0&&2|5|2|0
+lagrangePoly=5
+getdenominator=3
+getnumerator=4
+SecretKeys.LagrangeInterp=2
+main=1
