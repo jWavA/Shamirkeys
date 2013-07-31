@@ -1,0 +1,19 @@
+-- VERSION_3
+-- START DISKCACHE
+/Users/jameswu/Shamirkeys/.metadata/.plugins/org.eclipse.core.resources/.projects/Shamir's Secret Keys/com.python.pydev.analysis/v1_indexcache
+.v1_indexcache
+__init__|0|/Users/jameswu/Shamirkeys/Shamir's Secret Keys/SecretKeys/__init__.py
+LagrangeInterp|0|/Users/jameswu/Shamirkeys/Shamir's Secret Keys/SecretKeys/LagrangeInterp.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=LagrangeInterp
+-- END DICTIONARY
+-- START TREE 1
+2
+get|2|getnumerator!10@getdenominator!10@
+lag|1|lagrangePoly!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE
